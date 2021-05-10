@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      main {
+        width: 80%;
+        margin: 1rem auto;
+      }
+      .container {
+        background-color: lightgray;
+        padding: 20px 30px;
+      }
+      .card-one {
+        background-color: lightgreen;
+      }
+      .card-two {
+        background-color: yellow;
+      }
+      .card-two-one {
+        background-color: lightskyblue;
+      }
+      .card-two-two {
+        background-color: lightpink;
+      }
+
+      /*Flex*/
+      .flex-container {
+        display: flex;
+      }
+      .flex-card {
+        flex: 1;
+        display: flex; /*Enable flex on inner container*/
+        flex-direction: column; /*Defaults to row*/
+      }
+      .flex-nested-column {
+        flex: 1
+      }
+      /*Flex*/
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>Without Flex</h2>
+      <div class="container">
+        <div class="card-one">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="card-two">
+          <div class="card-two-one">   
+            <p>A</p>
+          </div>
+          <div class="card-two-two">
+            <h4>Card Three</h4>
+            <p>B</p>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <h2>With Flex</h2>
+      <div class="container flex-container">
+        <div class="card-one flex-card">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="card-two flex-card">
+          <div class="card-two-one flex-nested-column">   
+            <p>A</p>
+          </div>
+          <div class="card-two-two flex-nested-column">
+            <p>B</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      main {
+        width: 80%;
+        margin: 1rem auto;
+      }
+      .container {
+        background-color: lightgray;
+        padding: 20px 30px;
+      }
+      .card {
+        width: 150px;
+        height: 100px;
+        background-color: lightpink;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+      }
+
+      /*Flex*/
+      .flex-container {
+        display: flex;
+        align-items: center; /*Defaults to stretch, change to center/flex-start/flex-end to change vertically alignment*/
+        justify-content: space-around; /*Defaults to flex-start*/
+        flex-wrap: wrap; /*Defaults to no-wrap*/
+      }
+      /*Flex*/
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>Without Flex</h2>
+      <div class="container">
+        <div class="card">
+          <h3>Card One</h3>
+        </div>
+        <div class="card">
+          <h3>Card Two</h3>
+        </div>
+        <div class="card">
+          <h3>Card Three</h3>
+        </div>
+        <div class="card">
+          <h3>Card Four</h3>
+        </div>
+        <div class="card">
+          <h3>Card Five</h3>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <h2>With Flex</h2>
+      <div class="container flex-container">
+        <div class="card">
+          <h3>Card One</h3>
+        </div>
+        <div class="card">
+          <h3>Card Two</h3>
+        </div>
+        <div class="card">
+          <h3>Card Three</h3>
+        </div>
+        <div class="card">
+          <h3>Card Four</h3>
+        </div>
+        <div class="card">
+          <h3>Card Five</h3>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

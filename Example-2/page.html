@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      main {
+        width: 80%;
+        margin: 1rem auto;
+      }
+      .container {
+        background-color: lightgray;
+        padding: 20px 30px;
+      }
+
+      /*Flex*/
+      .flex-container {
+        display: flex;
+      }
+      .main-column {
+        flex: 3; /*Take three times the space compared to other columns*/
+        order: 2; /*Place at position*/
+      }
+      .side-one {
+        flex: 1;
+        order: 1;
+      }
+      .side-two {
+        flex: 1;
+        order: 3;
+      }
+      /*Flex*/
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>Without Flex</h2>
+      <div class="container">
+        <div class="main-column">
+          <h2>Main column</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="side-one">
+          <h2>Side one column</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="side-two">
+          <h2>Side two column</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <h2>With Flex</h2>
+      <div class="container flex-container">
+        <div class="main-column">
+          <h2>Main column</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="side-one">
+          <h2>Side one column</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="side-two">
+          <h2>Side two column</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

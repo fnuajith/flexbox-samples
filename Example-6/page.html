@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      main {
+        width: 80%;
+        margin: 1rem auto;
+      }
+      .container {
+        width: 350px;
+        height: 200px;
+        background-color:darkred;
+        padding: 20px 30px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+      }
+      .card {
+        color: white;
+        font-size: 30px;
+      }
+
+      /*Flex*/
+      .flex-container {
+        display: flex;
+      }
+      .flex-centered {
+        margin: auto; /*Auto margin in all directions*/
+      }
+      /*Flex*/
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>Without Flex</h2>
+      <div class="container">
+        <div class="card">
+          Card One
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+      <h2>With Flex</h2>
+      <div class="container flex-container">
+        <div class="card flex-centered">
+          Card One
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
