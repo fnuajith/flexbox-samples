@@ -31,6 +31,7 @@ Have an element fill up the available space
 ### Example - 6
 ## Perfectly center items
 - Demonstrate how to perfectly center items
+
 ![flex-6](/docs/images/flex-6.jpg)
 
 ### Example - 7
